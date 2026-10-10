@@ -1,0 +1,42 @@
+{
+  "name": "bytebattle-server",
+  "version": "1.0.0",
+  "description": "ByteBattle server - competitive programming platform",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --runInBand --forceExit",
+    "seed": "node seeds/problems.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "forceExit": true,
+    "detectOpenHandles": true,
+    "testTimeout": 30000
+  },
+  "dependencies": {
+    "axios": "1.7.2",
+    "bcryptjs": "2.4.3",
+    "google-auth-library": "9.13.0",
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "express-rate-limit": "7.3.1",
+    "helmet": "7.1.0",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "8.4.4",
+    "morgan": "1.10.0",
+    "socket.io": "4.7.5",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "mongodb-memory-server": "10.0.0",
+    "nodemon": "3.1.4",
+    "supertest": "7.0.0"
+  }
+}
